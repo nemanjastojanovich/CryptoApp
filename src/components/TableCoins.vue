@@ -31,14 +31,13 @@ fetch(
   "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false"
 )
   .then((resp) => resp.json())
-  .then((result) => {
+  .then((result, ID) => {
     coins.value = result
-    console.log(result)
-    // coins.value.id = ID
-    // console.log(ID)
+    result.forEach(element => {
+      console.log(element.id)
+    });
     setTimeout (function () {emit('finish')},2000)
     });
-    
     function popUp() {
       console.log("aaaa")
       
