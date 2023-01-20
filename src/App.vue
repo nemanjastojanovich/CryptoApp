@@ -24,6 +24,5 @@
 
 </style>
 
-<!-- klik na valutu treba da prikaže vrednost u EUR i kanadskim dolarima za kliknutu valutu u
-novom prozoru (popup). Dakle, isto poziv ka apiju ali na klik valute. -->
+
 
